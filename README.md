@@ -117,11 +117,11 @@ Reference known media properties:
 "Generate in the style of Studio Ghibli: 
 
 - Hand-painted watercolor backgrounds
--  
+  
 - Character designs with soft edges
--   
+   
 - Gentle camera movements
--  
+   
 - Pastel color palette"
 
 C. Motion Specification
@@ -141,11 +141,11 @@ Exclude unwanted elements:
 "Exclude:  
 
 - Watermarks
--  
+   
 - Low-resolution frames
--  
+   
 - Uncanny valley effects
--  
+   
 - Jittery camera movements"
 
 3. Python Implementation Example
