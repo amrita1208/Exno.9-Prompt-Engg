@@ -42,12 +42,17 @@ Structure:
 Output Characteristics:
 
 *Generic content
+
 *Default style/lighting
+
 *Short duration (2-4 sec)
+
 *Limited camera movement
 
 Level 2: Structured Prompts (Scene Description)
+
 Structure:
+
 "Create a 10-second video of:
 Subject: A gray tabby cat
 Action: Chasing a red butterfly
@@ -57,8 +62,11 @@ Style: Cinematic close-ups with shallow depth of field"
 Output Improvements:
 
 *Specific subject details
+
 *controlled environment
+
 Intentional visual style
+
 *Better temporal coherence
 
 Level 3: Advanced Prompts (Directorial Control)
@@ -66,18 +74,26 @@ Level 3: Advanced Prompts (Directorial Control)
 Structure:
 
 "Generate a 30-second animated sequence:
+
 Scene 1 (0-10s): Wide shot of cyberpunk city at night, neon lights reflecting on wet pavement
 Transition: Quick zoom to...
+
 Scene 2 (10-20s): Close-up of android's face as eyes glow blue
+
 Camera: Dutch angle with slow dolly movement
+
 Style: Blade Runner aesthetic with cinematic color grading
+
 FPS: 24 for filmic look"
 
 Output Enhancements:
 
 *Precise shot composition
+
 *Controlled pacing
+
 *Consistent art direction
+
 *Professional cinematography elements
 
 2. Key Prompting Techniques
@@ -86,39 +102,56 @@ A. Temporal Chunking
 
 Break videos into sequential segments:
 
-"Create a 15-second product demo:  
-1. 0-5s: Wide shot showing product in context  
-2. 5-10s: Close-up highlighting key features  
+"Create a 15-second product demo: 
+
+1. 0-5s: Wide shot showing product in context
+   
+2. 5-10s: Close-up highlighting key features
+    
 3. 10-15s: Text overlay with value proposition"
    
 B. Style Anchoring
+
 Reference known media properties:
 
-"Generate in the style of Studio Ghibli:  
-- Hand-painted watercolor backgrounds  
-- Character designs with soft edges  
-- Gentle camera movements  
+"Generate in the style of Studio Ghibli: 
+
+- Hand-painted watercolor backgrounds
+-  
+- Character designs with soft edges
+-   
+- Gentle camera movements
+-  
 - Pastel color palette"
 
 C. Motion Specification
+
 Control movement dynamics:
 
-"Camera: Slow 360° orbit around subject  
-Subject motion: Hair blowing in wind (speed: gentle breeze)  
+"Camera: Slow 360° orbit around subject 
+
+Subject motion: Hair blowing in wind (speed: gentle breeze) 
+
 Background: Time-lapse clouds moving left-to-right"
 
 D. Negative Prompting
+
 Exclude unwanted elements:
 
 "Exclude:  
-- Watermarks  
-- Low-resolution frames  
-- Uncanny valley effects  
+
+- Watermarks
+-  
+- Low-resolution frames
+-  
+- Uncanny valley effects
+-  
 - Jittery camera movements"
 
 3. Python Implementation Example
 
 from diffusers import DiffusionPipeline
+
 import torch
 
 class VideoGenerator:
@@ -166,8 +199,11 @@ advanced_vid = generator.generate_video(
 The 5 W Framework:
 
 *Who/What: Clear subject specification
+
 *Where: Environmental context
+
 *When: Temporal setting
+
 *Why: Purpose/goal of the video
 
 Technical Parameters:
@@ -182,17 +218,24 @@ Technical Parameters:
 
 Reference Embedding
 
-"Visual composition similar to <reference_image.jpg> but with:  
-- Cooler color temperature  
-- More dynamic camera angles  
+"Visual composition similar to <reference_image.jpg> but with:
+
+- Cooler color temperature
+ 
+- More dynamic camera angles
+   
 - Added futuristic HUD elements"
 
 Iterative Refinement:
 
-"Based on output #1 (attached):  
-1. Maintain the excellent lighting  
-2. Increase character detail by 30%  
-3. Smooth the walking animation  
+"Based on output #1 (attached): 
+
+1. Maintain the excellent lighting
+ 
+2. Increase character detail by 30%
+
+3. Smooth the walking animation
+   
 4. Add falling cherry blossom petals"
 
 
@@ -207,8 +250,11 @@ A. Multi-Modal Prompting
 Combine:
 
 1.Text description (this prompt)
+
 2.Style reference images (3 samples)
+
 3.Audio track (for timing/mood)
+
 4.Motion capture data (for animations)
 
 B. Interactive Generation
@@ -222,10 +268,14 @@ while not user_satisfied:
     
 C. Physics-Aware Prompting
 
-"Water simulation parameters:  
-- Surface tension: 0.072 N/m  
-- Viscosity: 0.89 mPa·s  
-- Splash particle count: 500-700  
+"Water simulation parameters: 
+
+- Surface tension: 0.072 N/m
+-  
+- Viscosity: 0.89 mPa·s
+- 
+- Splash particle count: 500-700
+- 
 - Render: Photorealistic fluid dynamics"
   
 Prompt For Video Generation
@@ -239,7 +289,9 @@ visibly clearer and healthier after use. End with him confidently stepping out, 
 music and display the Cetaphil logo at the end.
 
 
-Result: The Prompt of the above task executed successfully
+Result:
+
+The Prompt of the above task executed successfully
 
 
 
