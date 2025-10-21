@@ -41,13 +41,13 @@ Structure:
 
 Output Characteristics:
 
-*Generic content
+- Generic content
 
-*Default style/lighting
+- Default style/lighting
 
-*Short duration (2-4 sec)
+- Short duration (2-4 sec)
 
-*Limited camera movement
+- Limited camera movement
 
 Level 2: Structured Prompts (Scene Description)
 
@@ -61,13 +61,13 @@ Style: Cinematic close-ups with shallow depth of field"
 
 Output Improvements:
 
-*Specific subject details
+- Specific subject details
 
-*controlled environment
+- controlled environment
 
-Intentional visual style
+- Intentional visual style
 
-*Better temporal coherence
+- Better temporal coherence
 
 Level 3: Advanced Prompts (Directorial Control)
 
@@ -150,71 +150,25 @@ Exclude unwanted elements:
 
 3. Python Implementation Example
 
-from diffusers import DiffusionPipeline
-
-import torch
-
-class VideoGenerator:
-    def __init__(self, model_name="zeroscope-v2-xl"):
-        self.pipe = DiffusionPipeline.from_pretrained(
-            model_name,
-            torch_dtype=torch.float16
-        ).to("cuda")
-    
-  def generate_video(self, prompt, negative_prompt="", 
-                     num_frames=24, fps=8, steps=30):
-        return self.pipe(
-            prompt,
-            negative_prompt=negative_prompt,
-            num_frames=num_frames,
-            height=576,
-            width=1024,
-            num_inference_steps=steps,
-            guidance_scale=15,
-            fps=fps
-        ).frames[0]
-
-# Usage Examples
-generator = VideoGenerator()
-
-# Basic prompt
-basic_vid = generator.generate_video(
-    "A spaceship flying through space"
-)
-
-# Advanced prompt
-advanced_vid = generator.generate_video(
-    prompt="""Cinematic shot of SpaceX Starship launch:
-             - Camera: Slow-motion tracking from launchpad POV
-             - Details: Visible engine plume dynamics
-             - Atmosphere: Dawn lighting with fog effects""",
-    negative_prompt="low quality, cartoonish, unrealistic",
-    num_frames=48,
-    fps=24,
-    steps=50
-)
+<img width="694" height="573" alt="image" src="https://github.com/user-attachments/assets/f3fc4411-3737-4d32-a30b-87623ef07f2a" />
+<img width="670" height="488" alt="image" src="https://github.com/user-attachments/assets/2b7008a9-ce10-4fcf-a82d-e921c84201d0" />
 
 4. Prompt Engineering Best Practices
    
 The 5 W Framework:
 
-*Who/What: Clear subject specification
+- Who/What: Clear subject specification
 
-*Where: Environmental context
+- Where: Environmental context
 
-*When: Temporal setting
+- When: Temporal setting
 
-*Why: Purpose/goal of the video
+- Why: Purpose/goal of the video
 
 Technical Parameters:
 
-{
-  "duration": "15 seconds",
-  "aspect_ratio": "16:9", 
-  "framerate": 24,
-  "style": "hyper-realistic CGI",
-  "lighting": "volumetric god rays"
-}
+<img width="515" height="206" alt="image" src="https://github.com/user-attachments/assets/f6b06c9c-ad72-40ee-ab72-994aaf9b6c92" />
+
 
 Reference Embedding
 
@@ -259,23 +213,19 @@ Combine:
 
 B. Interactive Generation
 
-while not user_satisfied:
-    generated_vid = model.generate(
-        prompt + user_feedback,
-        preview=True
-    )
-    user_feedback = get_user_input()
+<img width="485" height="187" alt="image" src="https://github.com/user-attachments/assets/f6167bbf-2288-408a-aa05-3a4741f14c22" />
+
     
-C. Physics-Aware Prompting
+ C. Physics-Aware Prompting
 
 "Water simulation parameters: 
 
 - Surface tension: 0.072 N/m
--  
+  
 - Viscosity: 0.89 mPa·s
-- 
+  
 - Splash particle count: 500-700
-- 
+  
 - Render: Photorealistic fluid dynamics"
   
 Prompt For Video Generation
