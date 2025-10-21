@@ -88,13 +88,13 @@ FPS: 24 for filmic look"
 
 Output Enhancements:
 
-*Precise shot composition
+- Precise shot composition
 
-*Controlled pacing
+- Controlled pacing
 
-*Consistent art direction
+- Consistent art direction
 
-*Professional cinematography elements
+- Professional cinematography elements
 
 2. Key Prompting Techniques
  
